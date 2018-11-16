@@ -46,7 +46,7 @@ public class SkeletonController : MonoBehaviour {
                 this.transform.Translate(0, 0, 0);
             }
         }
-        else if (Vector3.Distance(player.position, this.transform.position) > 10)
+        else if (Vector3.Distance(player.position, this.transform.position) > 5)
         {
             sanim.SetBool("running", false);
             sanim.SetInteger("condition", 0);
